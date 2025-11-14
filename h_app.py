@@ -8,7 +8,7 @@ import pickle
 # ---------------------------
 @st.cache_resource
 def load_assets():
-    model = pickle.load(open("best_log_model.pkl", "rb"))
+    model = pickle.load(open("Best_log_model.pkl", "rb"))
     scaler = pickle.load(open("scaler.pkl", "rb"))
     return model, scaler
 
@@ -130,3 +130,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
